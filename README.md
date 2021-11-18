@@ -7,5 +7,6 @@ http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm
 ```
 ### 完整数据 data 文件超过100M 无法上传
 ```
+split -b 10m data.sql data_
 cat data_* >data.sql
 ```
